@@ -1,9 +1,74 @@
+/** 
+ * @author: Alexander Chi
+ * @description:
+ * @date: 01/Septiembre/2021
+**/ 
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@400;500;700&display=swap');
+
+/** Primary **/
+$veryDarkMagenta: hsl(300, 43%, 22%);
+$softPink: hsl(333, 80%, 67%);
+
+/** Neutral **/
+$darkGrayishMagenta: hsl(303, 10%, 53%);
+$lightGrayishMagenta: hsl(300, 24%, 96%);
+$white: hsl(0, 0%, 100%);
+
+$borderRaius: 10px;
+
+* {
+  padding: 0;
+  margin: 0;
+  font-size: 15px;
+}
+
+.container {
+  height: 100vh;
+  width: 100vw;
+  display: flex; 
+  justify-content: center;
+  align-items: center;
+}
+
+.container::before {
+  position: absolute;
+  content: url('./assets/svgs/bg-pattern-top-desktop.svg');
+}
+
+.container::after {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  content: url('./assets/svgs/bg-pattern-bottom-desktop.svg');
+}
+
+.content {
+  width:  90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: transparent; 
+}
+
+.row {
+  width: 100%;
+  display: flex;
+}
+
+.row>div.head,
+.row>div.star {
+  width: 50%;
+}
+
+.start__0,
 .start__1,
 .start__2,
 .start__3,
 .start__4,
 .start__5 {
   content: url('./assets/svgs/icon-star.svg');
+  padding-right: 10px;
 }
 
 .start__-1,
@@ -13,4 +78,99 @@
 .start__-5 {
   content: url('./assets/svgs/icon-star.svg');
   opacity: 0.5;
+  padding-right: 10px;
 }
+
+.stars__container {
+  width: 400px;
+  margin-bottom: 15px;
+  padding: 15px;
+  border-radius: $borderRaius;
+  background-color: $lightGrayishMagenta;
+}
+
+.center {
+  margin-left: 50px;
+}
+
+.bottom {
+  margin-left: 100px;
+}
+
+.stars__text {
+  font-weight: bold;
+  color: $veryDarkMagenta;
+} 
+
+h3.title { 
+  font-size: 3.5em;
+  width: 450px;
+  margin-top: -30px;
+  font-weight: bold;
+  color: $veryDarkMagenta;
+}
+
+p.description {  
+  width: 400px; 
+  color: $veryDarkMagenta;
+  margin-top: 30px;
+}
+
+.one {
+  margin-bottom: 50px;
+}
+
+/** CARDs **/
+.card {
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  background-color: $veryDarkMagenta;
+  margin: 10px;
+  padding: 25px;
+  border-radius: $borderRaius;
+}
+
+.middle {
+  margin-top: 60px;
+}
+
+.right {
+  margin-top: 120px;
+}
+
+.card__head {
+  display: flex; 
+}
+
+.card__head> img {
+  width: 45px;
+  border-radius: 50px;
+}
+
+.card__content {
+  display: flex;
+  flex-direction: column;
+  margin-left: 15px;
+} 
+
+.card__name,
+.card__text,
+.card__description {
+  color: $white;
+}
+
+.card__description {
+  margin-top: 25px;
+  line-height: 30px; 
+}
+
+.card__name {
+  font-weight: bold;
+}
+
+.card__text {
+  color: $softPink;
+  opacity: 0.8;
+}
+ 

@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/social-proof-section-master/static/css/main.75a1eedb.chunk.css",
+    "main.js": "/social-proof-section-master/static/js/main.db968b1a.chunk.js",
+    "main.js.map": "/social-proof-section-master/static/js/main.db968b1a.chunk.js.map",
+    "runtime-main.js": "/social-proof-section-master/static/js/runtime-main.4c9eff97.js",
+    "runtime-main.js.map": "/social-proof-section-master/static/js/runtime-main.4c9eff97.js.map",
+    "static/js/2.4a711224.chunk.js": "/social-proof-section-master/static/js/2.4a711224.chunk.js",
+    "static/js/2.4a711224.chunk.js.map": "/social-proof-section-master/static/js/2.4a711224.chunk.js.map",
+    "static/js/3.aac57973.chunk.js": "/social-proof-section-master/static/js/3.aac57973.chunk.js",
+    "static/js/3.aac57973.chunk.js.map": "/social-proof-section-master/static/js/3.aac57973.chunk.js.map",
+    "index.html": "/social-proof-section-master/index.html",
+    "static/css/main.75a1eedb.chunk.css.map": "/social-proof-section-master/static/css/main.75a1eedb.chunk.css.map",
+    "static/js/2.4a711224.chunk.js.LICENSE.txt": "/social-proof-section-master/static/js/2.4a711224.chunk.js.LICENSE.txt",
+    "static/media/App.scss": "/social-proof-section-master/static/media/icon-star.2d8e7b7c.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.4c9eff97.js",
+    "static/js/2.4a711224.chunk.js",
+    "static/css/main.75a1eedb.chunk.css",
+    "static/js/main.db968b1a.chunk.js"
+  ]
+}

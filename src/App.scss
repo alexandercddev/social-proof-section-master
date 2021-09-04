@@ -32,6 +32,8 @@ $borderRaius: 10px;
 
 .container::before {
   position: absolute;
+  left: 0;
+  top: 0;
   content: url('./assets/svgs/bg-pattern-top-desktop.svg');
 }
 
@@ -43,7 +45,7 @@ $borderRaius: 10px;
 }
 
 .content {
-  width:  90%;
+  width:  900px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -57,8 +59,15 @@ $borderRaius: 10px;
 }
 
 .row>div.head,
-.row>div.star {
+.row>div.stars {
   width: 50%;
+}
+
+.row> div.stars {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
 }
 
 .start__0,
@@ -89,12 +98,12 @@ $borderRaius: 10px;
   background-color: $lightGrayishMagenta;
 }
 
-.center {
-  margin-left: 50px;
+.top {
+  margin-right: 50px;
 }
 
-.bottom {
-  margin-left: 100px;
+.center {
+  margin-right: 25px;
 }
 
 .stars__text {
@@ -118,21 +127,27 @@ p.description {
 
 .one {
   margin-bottom: 50px;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
 /** CARDs **/
-.card {
-  height: 200px;
+.card { 
   display: flex;
-  flex-direction: column;
-  background-color: $veryDarkMagenta;
-  margin: 10px;
+  flex-direction: column; 
+  width: 33.33%;
+}
+
+.card__container {
+  background-color: $veryDarkMagenta; 
   padding: 25px;
   border-radius: $borderRaius;
 }
 
 .middle {
   margin-top: 60px;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
 .right {
@@ -141,10 +156,12 @@ p.description {
 
 .card__head {
   display: flex; 
+  align-items: center;
 }
 
 .card__head> img {
   width: 45px;
+  height: 45px;;
   border-radius: 50px;
 }
 
@@ -173,4 +190,5 @@ p.description {
   color: $softPink;
   opacity: 0.8;
 }
- 
+
+

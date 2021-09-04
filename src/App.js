@@ -54,15 +54,17 @@ const Card = (props) => {
     const { photo, name, text, description, position  } = props.card;
     return (
         <div className={`card ${position}`}>
-            <div className="card__head">
-                <img alt={name} src={photo} />
-                <div className="card__content">
-                    <span className="card__name">{name}</span>
-                    <span className="card__text">{text}</span>
+            <div className="card__container">
+                <div className="card__head">
+                    <img alt={name} src={photo} />
+                    <div className="card__content">
+                        <span className="card__name">{name}</span>
+                        <span className="card__text">{text}</span>
+                    </div>
                 </div>
-            </div>
-            <div className="card__description">
-                {description}
+                <div className="card__description">
+                    {description}
+                </div>
             </div>
         </div>
     );
